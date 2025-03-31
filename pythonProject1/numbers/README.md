@@ -5,3 +5,6 @@
 Игра "Прогрессия"
 [![Прогрессия - успех](https://i.imgur.com/JR90NPs.png)](https://imgur.com/a/gdA7vOq)
 [![Прогрессия - ошибка](https://i.imgur.com/NBAVq6F.png)](https://imgur.com/a/6P3UdCo)
+
+
+<a href="https://codeclimate.com/github/Kkisser/Development-methodology/maintainability"><img src="https://api.codeclimate.com/v1/badges/6ff602fc76cd3d51f30f/maintainability" /></a>
