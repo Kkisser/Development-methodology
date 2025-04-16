@@ -1,9 +1,12 @@
+import game1
+import game2
+
+
 # brain_games.py
 from game_engine import (
     welcome_user,
     run_game,
-    generate_lcm_round,
-    generate_progression_round
+
 )
 
 
