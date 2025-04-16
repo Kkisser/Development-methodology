@@ -1,0 +1,26 @@
+import random
+from typing import Tuple, Callable
+
+
+def generate_lcm_round() -> Tuple[str, str]:
+    """Генерация раунда для игры НОК"""
+    a, b, c = random.randint(1, 30), random.randint(1, 30), random.randint(1, 30)
+    question = f"{a} {b} {c}"
+    correct_answer = str(lcm_of_three(a, b, c))
+    return question, correct_answer
+
+
+def gcd(a: int, b: int) -> int:
+    """Вычисляет наибольший общий делитель"""
+    while b:
+        a, b = b, a % b
+    return a
+
+
+def lcm(a: int, b: int) -> int:
+    """Вычисляет наименьшее общее кратное"""
+    return a * b // gcd(a, b)
+
+
+def lcm_of_three(a: int, b: int, c: int) -> int:
+    return lcm(lcm(a, b), c)
